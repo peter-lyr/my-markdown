@@ -20,7 +20,7 @@ fu! markdownToHtmlPDF#md2HtmlPDF()
   endif
 endfu
 
-fu! markdownToHtmlPDF#deleteFileTypeOf(file_types=['html', 'pdf'])
+fu! markdownToHtmlPDF#deleteFileTypeOf(file_types=['html', 'pdf', 'docx'])
   let folder_path = expand("%:p:h")
   let file_types = a:file_types
   python3 << EOF
